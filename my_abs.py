@@ -8,3 +8,9 @@ def my_abs(x):
             return x
     except TypeError:
         return math.nan
+
+def my_almost_eq(x, y, tol):
+    if (my_abs(x -y) < tol):
+        return True
+    else:
+        return False

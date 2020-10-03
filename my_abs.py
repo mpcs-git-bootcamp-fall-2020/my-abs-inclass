@@ -11,3 +11,9 @@ def my_abs(x):
         do that math i forget
     else:
         return math.nan
+
+def my_almost_eq(x, y, tol):
+    if (my_abs(x -y) < tol):
+        return True
+    else:
+        return False
